@@ -1,0 +1,141 @@
+/* HEADER */
+
+header {
+    background-image: linear-gradient(to top right,rgba(234, 145, 145,0.7), rgba(75, 73, 117,0.7)), url(img/photo.jpeg);
+    background-size: cover;
+    color: white;
+    margin-bottom: 5rem;
+}
+header nav {
+    margin: 0 15rem;
+    padding-top: 5rem;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header li>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header div {
+    padding: 7.5rem 0;
+}
+
+header .btn-whitepink {
+    text-decoration: none;
+    background-color: white;
+    color: #EA9191 !important;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+}
+
+header::after {
+    content:'';
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    top: 1.5rem;
+    transform: rotate(45deg);
+}
+
+/* NATUREL AU GOUTER */
+#naturel-gouter {
+    margin-bottom: 5rem;
+}
+#naturel-gouter h2::before {
+    content: '';
+    display: block;
+    width: 12rem;
+    height: 12rem;
+    background-image: url(img/grain.png), linear-gradient(rgba(230, 179, 49, 0.7), rgba(230, 179, 49, 0.7));
+    background-size: contain;
+
+}
+
+/* DISCOVER */
+
+#discover {
+    margin-bottom: 5rem;
+    box-shadow: 0 1px 6px black;
+    border-radius: 25px;
+    padding: 40px 0px;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: linear-gradient(to top right,#4B4975 1%, #EA9191, #E6B331);
+    padding: 30px 0;
+    color: white;
+}
+
+
+footer #contact div {
+
+}
+
+
+footer #sep {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+footer #contact .decorated-contact::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    left: 36px;
+    margin-bottom: 15px;
+}
+
+footer #contact .decorated-contact::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    left: 192px;
+    margin-top: 15px;
+}
+footer form {
+    margin-bottom: 30px;
+}
+footer form * {
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+}
+
+footer form *:not(input[type="submit"]) {
+    margin-top: 15px;
+}
+
+footer form *::placeholder {
+    color: white;
+}
+
+footer form input[type="text"] {
+    padding: 5px 15px;
+}
+
+footer form input[type="submit"] {
+    background-color: #EA9191;
+    color: white;
+    width: auto;
+    padding: 10px 20px;
+    margin-top: -25px;
+}

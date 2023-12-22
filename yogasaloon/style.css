@@ -1,0 +1,163 @@
+body {
+    max-width: 1060px;
+    margin: auto;
+    font-family: 'Raleway';
+}
+
+/* HEADER */
+
+header {
+    background-image: url("img/yogamat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 50px;
+    height: auto;
+}
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline;
+    padding: 20px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.8em;
+    font-family: 'Mandali';
+    text-transform: uppercase;
+}
+
+header h1, header h3 {
+    margin: 10px 0px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+/* CONCEPT */
+
+.blue-title {
+    color: #6E8E9B;
+}
+
+.blue-title::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: #6E8E9B;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rounded-image {
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    width: 50px;
+}
+
+#concept div {
+    width: 70%;
+}
+
+#concept aside {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* COURS */
+
+#cours div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#cours aside{
+    width: 30%;
+}
+
+#cours article{
+    width: 60%;
+}
+
+#cours img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* CONTACT */
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color:#6E8E9B;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color:#6E8E9B;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 990px) {
+    .row {
+        flex-direction: row-reverse;
+    }
+}
